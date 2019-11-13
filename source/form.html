@@ -34,86 +34,86 @@
     </p>
 
     <form class="page-main__form form" method="post" action="https://echo.htmlacademy.ru.">
-      <fieldset class="form__option">
+      <fieldset class="form__fieldset">
         <legend class="visually-hidden">Параметры котика</legend>
-        <ul class="form__options-list">
+        <ul class="form__list">
           <li class="form__options-item">
-            <label for="name" class="form__options-label">Имя:*</label>
-            <input class="form__options-input" type="text" id="name" name="name" placeholder="Барсик">
+            <label for="name" class="form__label">Имя:*</label>
+            <input class="form__input" type="text" id="name" name="name" placeholder="Барсик">
           </li>
           <li class="form__options-item">
-            <label for="weight" class="form__options-label">Вес (кг):*</label>
-            <input class="form__options-input" type="text" id="weight" name="name" placeholder="7">
+            <label for="weight" class="form__label">Вес (кг):*</label>
+            <input class="form__input" type="text" id="weight" name="weight" placeholder="7">
           </li>
           <li class="form__options-item">
-            <label for="age" class="form__options-label">Возраст (лет):</label>
-            <input class="form__options-input" type="text" id="age" name="name" placeholder="7">
+            <label for="age" class="form__label">Возраст (лет):</label>
+            <input class="form__input" type="text" id="age" name="age" placeholder="7">
           </li>
         </ul>
       </fieldset>
 
-      <fieldset class="form__program">
+      <fieldset class="form__fieldset">
         <legend class="visually-hidden">Программа</legend>
-        <ul class="form__program-list">
-          <li class="form__program-item">
-            <label for="losing-weight" class="form__program-label">Похудение</label>
-            <input class="form__program-input" type="radio" id="losing-weight" name="program" checked>
+        <ul class="form__list">
+          <li class="form__radio radio">
+            <input class="radio__input visually-hidden" type="radio" id="losing-weight" name="program" checked>
+            <label for="losing-weight" class="radio__label">Похудение</label>
           </li>
-          <li class="form__program-item">
-            <label for="mass-gain" class="form__program-label">Набор массы</label>
-            <input class="form__program-input" type="radio" id="mass-gain" name="program">
+          <li class="form__radio radio">
+            <input class="radio__input visually-hidden" type="radio" id="mass-gain" name="program">
+            <label for="mass-gain" class="radio__label">Набор массы</label>
           </li>
-          <li class="form__program-item">
-            <label for="advice" class="form__program-label">Не знаю (нужен ваш совет)</label>
-            <input class="form__program-input" type="radio" id="advice" name="program">
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset class="form__contacts">
-        <legend class="form__contacts-header heading-group">Контактные данные (владельца кота)</legend>
-        <ul class="form__contacts-list">
-          <li class="form__contacts-item">
-            <label for="email" class="form__contacts-label">E-mail:*</label>
-            <input class="form__contacts-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
-          </li>
-          <li class="form__contacts-item">
-            <label for="phone" class="form__contacts-label">Телефон:*</label>
-            <input class="form__contacts-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+          <li class="form__radio radio">
+            <input class="radio__input visually-hidden" type="radio" id="advice" name="program">
+            <label for="advice" class="radio__label">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
       </fieldset>
 
-      <div class="form___comment">
-        <label for="comment" class="form___comment-label heading-group">Комментарий</label>
-        <textarea class="form___comment-textarea" name="comment" id="comment" rows="4"
+      <fieldset class="form__fieldset">
+        <legend class="form__header heading-group">Контактные данные (владельца кота)</legend>
+        <ul class="form__list">
+          <li class="form__contacts-item">
+            <input class="form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
+            <label for="email" class="form__label">E-mail:*</label>
+          </li>
+          <li class="form__contacts-item">
+            <input class="form__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90">
+            <label for="phone" class="form__label">Телефон:*</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="form__fieldset">
+        <label for="comment" class="form__label heading-group">Комментарий</label>
+        <textarea class="form__textarea" name="comment" id="comment" rows="4"
                   placeholder="Расскажите о всех повадках кота"></textarea>
-      </div>
+      </fieldset>
 
-      <fieldset class="form__extra">
-        <legend class="form__extra-header heading-group">Дополнительно</legend>
-        <ul class="form__extra-list">
-          <li class="form__extra-item">
-            <label for="sugar-change" class="form__extra-label">Сахарозаменитель</label>
-            <input class="form__extra-input" type="checkbox" id="sugar-change" name="sugar-change" checked>
+      <fieldset class="form__fieldset">
+        <legend class="form__header heading-group">Дополнительно</legend>
+        <ul class="form__list">
+          <li class="form__checkbox ">
+            <input class="form__checkbox-extra-input visually-hidden" type="checkbox" id="sugar-change" name="sugar-change" checked>
+            <label for="sugar-change" class="form__checkbox-label">Сахарозаменитель</label>
           </li>
-          <li class="form__extra-item">
-            <label for="water" class="form__extra-label">Питьевая вода</label>
-            <input class="form__extra-input" type="checkbox" id="water" name="water">
+          <li class="form__checkbox">
+            <input class="form__checkbox-input visually-hidden" type="checkbox" id="water" name="water">
+            <label for="water" class="form__checkbox-label">Питьевая вода</label>
           </li>
-          <li class="form__extra-item">
-            <label for="milk" class="form__extra-label">Молоко</label>
-            <input class="form__extra-input" type="checkbox" id="milk" name="milk">
+          <li class="form__checkbox">
+            <input class="form__checkbox-input visually-hidden" type="checkbox" id="milk" name="milk">
+            <label for="milk" class="form__checkbox-label">Молоко</label>
           </li>
-          <li class="form__extra-item">
-            <label for="vitamins" class="form__extra-label">Витамина</label>
-            <input class="form__extra-input" type="checkbox" id="vitamins" name="vitamins">
+          <li class="form__checkbox">
+            <input class="form__checkbox-input visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+            <label for="vitamins" class="form__checkbox-label">Витамина</label>
           </li>
         </ul>
       </fieldset>
 
-      <button class="form__button" type="submit">
-        <span class="form__button-text">Отправить заявку</span>
+      <button class="form__button button" type="submit">
+        Отправить заявку
       </button>
 
       <p class="form__necessarily-field">
@@ -144,13 +144,13 @@
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="#" class="social__link social__link__vk" aria-label="Мы во ВКонтакте"></a>
+          <a href="#" class="social__link social__link--vk" aria-label="Мы во ВКонтакте"></a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link__ig" aria-label="Мы в Instagram"></a>
+          <a href="#" class="social__link social__link--ig" aria-label="Мы в Instagram"></a>
         </li>
         <li class="social__item">
-          <a href="#" class="social__link social__link__fb" aria-label="Мы в Facebook"></a>
+          <a href="#" class="social__link social__link--fb" aria-label="Мы в Facebook"></a>
         </li>
       </ul>
     </div>
