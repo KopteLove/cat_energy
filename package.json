@@ -5,6 +5,7 @@
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
+    "node-sass": "^4.13.0",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
