@@ -12,6 +12,7 @@
     "gulp-postcss": "8.0.x",
     "gulp-sass": "4.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
+    "node-sass": "^4.13.0",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
