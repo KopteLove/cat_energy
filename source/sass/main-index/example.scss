@@ -1,0 +1,77 @@
+.example {
+  background-color: $gray;
+}
+
+.example__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__item {
+  width: 124px;
+  text-align: center;
+}
+
+.example__value {
+  font-family: "Oswald", "Georgia", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 15px 10px;
+  border: 1px solid #cfcfcf;
+  border-radius: 3px;
+  color: #111111;
+}
+
+.example__mark {
+  font-family: "Arial", "Georgia", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 0 15px;
+  margin: 0 15px;
+  background-color: $gray;
+  vertical-align: top;
+  transform: translateY(-8px);
+}
+
+.example__total {
+  font-family: "Oswald", "Georgia", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__scale {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.example__scale-text {
+  font-family: "Oswald", "Georgia", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.example__scale-slider {
+  width: 84px;
+  height: 12px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #cdcdcd;
+  align-self: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 35px;
+    height: 6px;
+    background-color: $green;
+    border-radius: 10px;
+  }
+}

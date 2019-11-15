@@ -1,0 +1,66 @@
+.features {
+  padding-bottom: 20px;
+}
+
+.features__list {
+  @include list-reset();
+}
+
+.features__item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $green;
+  }
+}
+
+.features__item--leaf::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+}
+
+.features__item--powder::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+}
+
+.features__item--dining::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+}
+
+.features__item--clock::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+}

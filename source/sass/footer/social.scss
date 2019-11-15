@@ -1,0 +1,26 @@
+.social {
+  padding: 20px 0;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 135px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social__item {
+  @include list-reset();
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}

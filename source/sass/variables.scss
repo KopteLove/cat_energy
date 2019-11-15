@@ -1,0 +1,9 @@
+$green: #68b738;
+$gray: #f2f2f2;
+$border-grey: #d9d9d9;
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

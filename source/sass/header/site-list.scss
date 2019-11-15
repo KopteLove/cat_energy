@@ -1,0 +1,24 @@
+.site-list {
+  @include list-reset;
+  font-family: "Oswald", "Georgia", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.site-list__item {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.site-list__item:nth-child(1) {
+  border-top: 1px solid #e6e6e6;
+}
+
+.site-list__link {
+  display: block;
+  text-decoration: none;
+  padding: 22px 0;
+}
