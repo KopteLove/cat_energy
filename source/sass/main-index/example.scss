@@ -13,9 +13,6 @@
 }
 
 .example__value {
-  font-family: "Oswald", "Georgia", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
   text-transform: uppercase;
   padding: 15px 10px;
   border: 1px solid #cfcfcf;
@@ -24,7 +21,7 @@
 }
 
 .example__mark {
-  font-family: "Arial", "Georgia", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   padding: 0 15px;
@@ -35,7 +32,7 @@
 }
 
 .example__total {
-  font-family: "Oswald", "Georgia", sans-serif;
+  font-family: "Oswald", "Verdana", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -47,12 +44,6 @@
   justify-content: space-between;
   width: 200px;
   margin: 0 auto;
-}
-
-.example__scale-text {
-  font-family: "Oswald", "Georgia", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .example__scale-slider {

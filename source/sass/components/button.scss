@@ -1,10 +1,14 @@
 .button {
   display: block;
   padding: 16px 0;
-  font-family: "Oswald", "Georgia", sans-serif;
+  font-family: "Oswald", "Verdana", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
   background-color: $green;
   text-decoration: none;
   text-align: center;
+}
+
+.button--gray {
+  background-color: $gray;
 }

@@ -1,24 +1,24 @@
+.page-header__bg::before {
+  content: "";
+  position: absolute;
+  top: 66px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 320px;
+  min-height: 305px;
+  background-color: $green;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: -1;
+}
+
 .page-header__container {
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 66px;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 320px;
-    min-height: 305px;
-    background-color: $green;
-    background-image: url("../../img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    z-index: -1;
-  }
 }
 
 .page-header__header {
-  font-family: "Oswald", "Georgia", sans-serif;
+  font-family: "Oswald", "Verdana", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -28,7 +28,7 @@
 }
 
 .page-header__text {
-  font-family: "Oswald", "Georgia", sans-serif;
+  font-family: "Oswald", "Verdana", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
