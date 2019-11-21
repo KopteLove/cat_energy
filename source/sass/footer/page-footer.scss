@@ -1,0 +1,43 @@
+.page-footer {
+  background-color: $gray;
+}
+
+.page-footer__wrapper {
+  background-color: #ffffff;
+}
+
+.page-footer__cooperation-contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__cooperation {
+  padding: 25px 0;
+  margin: 0;
+}
+
+.page-footer__contacts {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 25px 0;
+}
+
+.page-footer__map {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-footer__logo {
+  padding: 35px 0;
+}
+
+.page-footer__logo-link {
+  display: block;
+  position: relative;
+  width: 128px;
+  height: 24px;
+  background-image: url("../img/logo-footer.svg");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
