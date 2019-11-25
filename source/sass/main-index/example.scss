@@ -15,7 +15,7 @@
 .example__value {
   text-transform: uppercase;
   padding: 15px 10px;
-  border: 1px solid #cfcfcf;
+  border: 1px solid $line-gray-dark;
   border-radius: 3px;
   color: #111111;
 }
@@ -52,7 +52,7 @@
   position: relative;
   background-color: #ffffff;
   border-radius: 10px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $line-gray-dark;
   align-self: center;
 
   &::before {

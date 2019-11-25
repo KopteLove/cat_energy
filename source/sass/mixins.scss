@@ -3,3 +3,12 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin font-inherit() {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: inherit;
+}
