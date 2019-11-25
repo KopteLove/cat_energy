@@ -26,6 +26,17 @@
 .page-footer__map {
   width: 320px;
   margin: 0 auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 55px;
+    height: 53px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/map-pin.png") no-repeat;
+  }
 }
 
 .page-footer__logo {

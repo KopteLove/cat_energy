@@ -46,6 +46,7 @@
   text-transform: uppercase;
   color: #444444;
   padding: 14px 15px;
+
   @include font-inherit();
 }
 
@@ -144,6 +145,7 @@
 .form__textarea {
   width: 100%;
   margin-top: 30px;
+
   @include font-inherit();
   text-transform: uppercase;
   padding: 14px 15px;
@@ -213,9 +215,11 @@
 .form__button {
   width: 100%;
   border: none;
+
   @include font-inherit();
   line-height: 20px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .form__necessarily-field {
