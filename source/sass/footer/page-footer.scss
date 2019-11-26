@@ -21,6 +21,7 @@
   font-size: 14px;
   line-height: 20px;
   padding: 25px 0;
+  font-style: normal;
 }
 
 .page-footer__map {
@@ -33,9 +34,10 @@
     width: 55px;
     height: 53px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 176px;
+    left: 130px;
     background: url("../img/map-pin.png") no-repeat;
+    background-size: 55px 53px;
   }
 }
 
@@ -51,4 +53,12 @@
   background-image: url("../img/logo-footer.svg");
   background-repeat: no-repeat;
   margin: 0 auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

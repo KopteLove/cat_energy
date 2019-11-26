@@ -1,19 +1,27 @@
-.extra-product__header {
-  color: #111111;
+.extra-product {
   position: relative;
-  text-align: left;
-  font-weight: normal;
 
   &::after {
     content: "";
     display: inline-block;
     position: absolute;
-    top: 60%;
-    left: 88%;
-    width: 100%;
+    top: 34px;
+    right: 0;
+    width: 60%;
     height: 3px;
     background-color: $green;
+    z-index: -1;
   }
+}
+
+.extra-product__header {
+  display: inline-block;
+  color: #111111;
+  text-align: left;
+  font-weight: normal;
+  position: relative;
+  padding-right: 28px;
+  background-color: #ffffff;
 }
 
 .extra-product__list {
