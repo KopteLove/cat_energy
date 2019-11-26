@@ -91,20 +91,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__header {
-    font-size: 60px;
-    line-height: 60px;
-    color: inherit;
-    text-align: left;
-  }
-}
-
-.page-header__slogan {
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
   .page-header__slogan {
     font-size: 20px;
     line-height: 20px;
