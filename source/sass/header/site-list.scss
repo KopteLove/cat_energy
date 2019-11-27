@@ -7,14 +7,15 @@
   font-style: normal;
   text-align: center;
   background-color: #ffffff;
+  text-transform: uppercase;
 }
 
 .site-list__item {
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid $line-gray-all;
 }
 
 .site-list__item:nth-child(1) {
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid $line-gray-all;
 }
 
 .site-list__link {

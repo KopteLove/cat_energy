@@ -1,5 +1,5 @@
 .product {
-  border-bottom: 1px solid $border-grey;
+  border-bottom: 1px solid $line-gray-all;
   padding-bottom: 20px;
 }
 
@@ -10,7 +10,7 @@
 }
 
 .product:first-child {
-  border-top: 1px solid $border-grey;
+  border-top: 1px solid $line-gray-all;
 }
 
 .product__wrapper {
@@ -49,7 +49,7 @@
 }
 
 .product__button {
-  width: $product-button;
+  width: 100%;
   color: #ffffff;
 }
 
@@ -63,7 +63,7 @@
   margin: 82px auto 0;
 }
 
-.product--pseudo {
+.product__flex--pseudo {
   position: relative;
 
   &::before {
@@ -78,6 +78,6 @@
 }
 
 .product__more-button {
-  width: $product-button;
+  width: 100%;
   color: #444444;
 }
