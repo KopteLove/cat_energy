@@ -7,3 +7,10 @@
   color: #111111;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .heading-secondary {
+    font-size: 60px;
+    margin: 55px 0;
+  }
+}

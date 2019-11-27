@@ -42,17 +42,44 @@
   width: 100%;
   height: 45px;
   box-sizing: border-box;
-  border: 1px solid #e6e6e6;
+  border: 1px solid $line-gray-all;
   text-transform: uppercase;
-  color: #444444;
   padding: 14px 15px;
 
   @include font-inherit();
+  color: #444444;
+  outline: none;
+}
+
+.form__input:hover {
+  border: 1px solid $line-gray-dark;
+}
+
+.form__input:focus {
+  border: 2px solid #444444;
+}
+
+.form__input:focus ~ svg {
+  fill: $green;
 }
 
 .form__header {
-  padding: 20px 0;
+  display: inline-block;
+  color: #111111;
+  text-align: left;
+  font-weight: normal;
+  position: relative;
+  padding-top: 20px;
+  padding-right: 28px;
+  background-color: #ffffff;
   text-transform: none;
+}
+
+.form__header-helper {
+  display: inline-block;
+  text-transform: none;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .form__radio:first-child {
@@ -100,6 +127,46 @@
   display: block;
 }
 
+.form__radio-label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.form__radio-input:active ~ label {
+  opacity: 0.3;
+}
+
+.form__radio-input:disabled ~ label {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.form__radio-input:disabled ~ label::before {
+  opacity: 0.3;
+  cursor: default;
+  border: 1px solid $border-grey;
+}
+
+.form__radio-input:active ~ label::after,
+.form__radio-input:active ~ label::before {
+  opacity: 0.3;
+  border: 1px solid $border-grey;
+}
+
+.form__fieldset--contacts {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 34px;
+    right: 0;
+    width: 60%;
+    height: 3px;
+    background-color: $green;
+    z-index: -1;
+  }
+}
+
 .form__mail {
   width: 17px;
   height: 13px;
@@ -118,40 +185,45 @@
   background: url("../img/icon-phone.svg") no-repeat;
 }
 
-.form__fieldset--contacts::after {
-  content: "";
-  position: absolute;
-  top: 45px;
-  left: 55%;
-  width: 100%;
-  height: 3px;
-  background-color: $green;
-}
-
 .form__fieldset--textarea {
   padding-bottom: 0;
-}
+  position: relative;
 
-.form__fieldset--textarea::after {
-  content: "";
-  position: absolute;
-  top: 24px;
-  left: 50%;
-  width: 100%;
-  height: 3px;
-  background-color: $green;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: 0;
+    width: 60%;
+    height: 3px;
+    background-color: $green;
+    z-index: -1;
+  }
 }
 
 .form__textarea {
   width: 100%;
   margin-top: 30px;
+  box-sizing: border-box;
 
   @include font-inherit();
   text-transform: uppercase;
-  padding: 14px 15px;
+  padding: 14px 13px;
+  border: 1px solid #e6e6e6;
+}
+
+.form__textarea:hover {
+  border: 1px solid #bababa;
 }
 
 .form__label--textarea {
+  display: inline-block;
+  color: #111111;
+  text-align: left;
+  font-weight: normal;
+  position: relative;
+  padding-right: 28px;
+  background-color: #ffffff;
   text-transform: none;
 }
 
@@ -162,10 +234,11 @@
     content: "";
     position: absolute;
     top: 34px;
-    left: 52%;
-    width: 100%;
+    right: 0;
+    width: 60%;
     height: 3px;
     background-color: $green;
+    z-index: -1;
   }
 }
 
@@ -180,6 +253,10 @@
   margin-bottom: 25px;
 }
 
+.form__list--checkbox {
+  padding-top: 20px;
+}
+
 .form__checkbox-label {
   margin-left: 45px;
   cursor: pointer;
@@ -191,7 +268,7 @@
     position: absolute;
     top: -6px;
     left: 0;
-    border: 1px solid $border-grey;
+    border: 1px solid $line-gray-dark;
     cursor: pointer;
   }
 
@@ -212,12 +289,29 @@
   display: block;
 }
 
+.form__checkbox-label:hover::before {
+  border-color: #bababa;
+}
+
+.form__checkbox-input:active ~ label::after,
+.form__checkbox-input:active ~ label {
+  opacity: 0.3;
+}
+
+.form__checkbox-input::before {
+  border: 1px solid $border-grey;
+  opacity: 0.3;
+}
+
+.form__checkbox-input:disabled ~ label {
+  opacity: 0.3;
+  cursor: default;
+  border: 1px solid $border-grey;
+}
+
 .form__button {
   width: 100%;
   border: none;
-
-  @include font-inherit();
-  line-height: 20px;
   color: #ffffff;
   cursor: pointer;
 }

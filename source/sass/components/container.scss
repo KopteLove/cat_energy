@@ -7,3 +7,26 @@
 .container--relative {
   position: relative;
 }
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .container-helper {
+    width: 200px;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}

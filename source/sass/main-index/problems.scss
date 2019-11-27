@@ -23,6 +23,23 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .problems__item {
+    margin-bottom: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 90px;
+      left: 448px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: $green;
+    }
+  }
+}
+
 .problems__item--sitting::after {
   content: "";
   position: absolute;
@@ -32,6 +49,19 @@
   height: 49px;
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .problems__item--sitting::after {
+    content: "";
+    position: absolute;
+    top: 85px;
+    left: 490px;
+    width: 140px;
+    height: 194px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .problems__item--going::after {
@@ -45,8 +75,28 @@
   background-repeat: no-repeat;
 }
 
+@media (min-width: $tablet-width) {
+  .problems__item--going::after {
+    content: "";
+    position: absolute;
+    top: 133px;
+    left: 412px;
+    width: 268px;
+    height: 112px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 .problems__container {
   padding: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .problems__container {
+    padding: 80px 55px 65px;
+    width: 375px;
+  }
 }
 
 .problems__header {
@@ -65,10 +115,29 @@
   margin-left: 30px;
 }
 
+
+@media (min-width: $tablet-width) {
+  .problems__header {
+    font-size: 36px;
+    text-align: left;
+    margin: 0;
+  }
+}
+
 .problems__text {
   margin-top: 34px;
   padding-bottom: 25px;
   border-bottom: 1px solid $border-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .problems__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #111111;
+    border: none;
+    margin-right: 35px;
+  }
 }
 
 .problems__link {
@@ -89,5 +158,34 @@
     height: 11px;
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
+  }
+}
+
+.problems__link:hover::after {
+  width: 33px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+}
+
+.problems__link:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .problems__link {
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 72px;
+      left: 185px;
+      width: 24px;
+      height: 11px;
+      background-image: url("../img/icon-right-arrow-long.svg");
+      background-repeat: no-repeat;
+    }
   }
 }

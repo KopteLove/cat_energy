@@ -11,3 +11,14 @@
   cursor: pointer;
   outline: none;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    width: 462px;
+    margin: 0;
+  }
+}

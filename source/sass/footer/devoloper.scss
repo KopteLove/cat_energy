@@ -8,3 +8,11 @@
   padding: 25px 0;
   color: #444444;
 }
+
+.developer__link:hover svg {
+  fill: $green;
+}
+
+.developer__link:active {
+  opacity: 0.3;
+}
