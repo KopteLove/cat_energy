@@ -59,19 +59,9 @@
   }
 }
 
-.page-header__text {
-  font-family: "Oswald", "Verdana", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  font-style: normal;
-  color: #ffffff;
-  text-align: center;
-}
-
 @media (min-width: $tablet-width) {
   .page-header__text {
-    width: 427px;
+    width: 419px;
     font-weight: 400;
     font-style: normal;
     color: #111111;
@@ -91,12 +81,34 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header__header {
+    font-family: "Oswald", "Verdana", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    text-align: left;
+    text-transform: none;
+  }
+}
+
+.page-header__slogan {
+  font-family: "Oswald", "Verdana", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
   .page-header__slogan {
     font-size: 20px;
     line-height: 20px;
     color: inherit;
     text-align: left;
     margin-bottom: 20px;
+    text-transform: uppercase;
   }
 }
 
