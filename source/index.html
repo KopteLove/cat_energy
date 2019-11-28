@@ -153,15 +153,26 @@
       </div>
       <div class="example__bg-wrapper">
         <div class="container">
-          <picture>
-            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-          <img class="example__img" src="img/before-mobile@1x.png" width="320" height="240" alt="Результат на котике">
-          </picture>
-          <div class="example__scale">
-            <p class="example__scale-text text-title">Было</p>
-            <div class="example__scale-slider"></div>
-            <p class="example__scale-text text-title">Стало</p>
+          <div class="example__relative">
+            <div class="example__before-wrapper">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+                <img class="example__img-before" src="img/before-mobile@1x.png" width="320" height="240" alt="Результат на котике">
+              </picture>
+            </div>
+            <div class="example__after-wrapper">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+                <img class="example__img-after" src="img/after-mobile@1x.png" width="320" height="240" alt="Результат на котике">
+              </picture>
+            </div>
+            <div class="example__scale">
+              <p class="example__scale-text text-title">Было</p>
+              <div class="example__scale-slider"></div>
+              <p class="example__scale-text text-title">Стало</p>
+            </div>
           </div>
         </div>
       </div>
