@@ -25,6 +25,26 @@
   font-style: normal;
 }
 
+
+@media (min-width: $tablet-width) {
+  .page-footer__cooperation-contacts {
+    padding: 70px 60px;
+  }
+
+  .page-footer__cooperation {
+    font-size: 20px;
+    line-height: 25px;
+    width: 155px;
+    padding-left: 40px;
+  }
+
+  .page-footer__contacts {
+    width: 155px;
+    font-size: 16px;
+    padding-right: 40px;
+  }
+}
+
 .page-footer__map {
   width: 320px;
   margin: 0 auto;
@@ -39,6 +59,36 @@
     left: 130px;
     background: url("../img/map-pin.png") no-repeat;
     background-size: 55px 53px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__map {
+    width: 768px;
+
+    &::before {
+      width: 124px;
+      height: 106px;
+      top: 150px;
+      left: 50%;
+      margin-left: -60px;
+      background-size: 124px 106px;
+    }
+  }
+
+  .page-footer__map-img {
+    width: 767px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__map {
+    width: 1300px;
+  }
+
+  .page-footer__map-img {
+    width: 1300px;
   }
 }
 

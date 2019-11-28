@@ -21,6 +21,12 @@
     padding: 0;
     margin: 0;
   }
+
+  .container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media (min-width: $desktop-width) {
