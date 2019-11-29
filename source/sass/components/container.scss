@@ -31,8 +31,22 @@
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1300px;
+    width: 1220px;
     margin: 0 auto;
     padding: 0 40px;
+  }
+
+  .container-helper {
+    flex-shrink: 1;
+    padding: 0;
+  }
+
+  .container-example {
+    flex-shrink: 1;
+    width: auto;
+  }
+
+  .container-height {
+    min-height: 577px;
   }
 }

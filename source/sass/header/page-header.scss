@@ -57,6 +57,11 @@
     background-size: 720px 696px;
     z-index: -1;
   }
+
+  .page-header__wrapper {
+    width: 1220px;
+    padding-top: 35px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -66,6 +71,15 @@
     font-style: normal;
     color: #111111;
     margin-left: 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__text {
+    width: 419px;
+    color: #111111;
+    margin-left: 90px;
+    margin-top: 110px;
   }
 }
 
@@ -126,6 +140,9 @@
 
 @media (min-width: $desktop-width) {
   .page-header__img {
+    position: absolute;
+    top: 25px;
+    left: 490px;
     width: 552px;
     height: 499px;
   }
@@ -139,5 +156,12 @@
     top: 265px;
     left: 120px;
     width: 245px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__button {
+    top: 345px;
+    left: 135px;
   }
 }

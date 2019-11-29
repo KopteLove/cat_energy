@@ -22,3 +22,9 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 480px;
+  }
+}

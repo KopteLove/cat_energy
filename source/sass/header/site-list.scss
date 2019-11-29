@@ -22,6 +22,19 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: rgba(104, 183, 56, 0);
+  }
+}
+
 .site-list__item {
   border-bottom: 1px solid $line-gray-all;
 }
