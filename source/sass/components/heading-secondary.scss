@@ -11,6 +11,13 @@
 @media (min-width: $tablet-width) {
   .heading-secondary {
     font-size: 60px;
-    margin: 55px 0;
+    margin: 48px 0 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .heading-secondary {
+    font-size: 60px;
+    margin: 42px 0;
   }
 }

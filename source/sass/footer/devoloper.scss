@@ -16,3 +16,10 @@
 .developer__link:active {
   opacity: 0.3;
 }
+
+@media (min-width: $tablet-width) {
+  .developer__svg {
+    margin-right: -6px;
+    margin-left: 15px;
+  }
+}

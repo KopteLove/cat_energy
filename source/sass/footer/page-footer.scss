@@ -2,6 +2,12 @@
   background-color: $gray;
 }
 
+@media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 3px;
+  }
+}
+
 .page-footer__wrapper {
   background-color: #ffffff;
 }
@@ -28,7 +34,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__cooperation-contacts {
-    padding: 70px 0;
+    padding: 42px 0 26px;
   }
 
   .page-footer__cooperation {
@@ -42,6 +48,38 @@
     width: 155px;
     font-size: 16px;
     padding-right: 40px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer-relative {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .page-footer__wrapper {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 570px;
+    z-index: 2;
+  }
+
+  .page-footer__cooperation-contacts {
+    width: 570px;
+    padding: 40px 90px 31px 75px;
+    box-sizing: border-box;
+  }
+
+  .page-footer__cooperation {
+    padding-left: 0;
+  }
+
+  .page-footer__contacts {
+    padding-right: 0;
+    text-align: left;
   }
 }
 
@@ -71,7 +109,7 @@
       height: 106px;
       top: 150px;
       left: 50%;
-      margin-left: -60px;
+      margin-left: -62px;
       background-size: 124px 106px;
     }
   }
@@ -84,11 +122,19 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__map {
-    width: 1300px;
+    width: auto;
+    overflow: hidden;
+
+    &::before {
+      top: 150px;
+      left: 1058px;
+      margin-left: -60px;
+    }
   }
 
   .page-footer__map-img {
-    width: 1300px;
+    max-width: 1440px;
+    width: auto;
   }
 }
 

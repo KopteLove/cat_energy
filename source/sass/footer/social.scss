@@ -13,6 +13,13 @@
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding-left: 30px;
+    width: 126px;
+  }
+}
+
 .social__item {
   @include list-reset();
 }
@@ -36,7 +43,7 @@
 @media (min-width: $tablet-width) {
   .social {
     border: none;
-    padding: 60px 0;
+    padding: 55px 0;
   }
 
   .social__vk {

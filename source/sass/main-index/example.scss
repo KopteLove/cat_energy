@@ -13,31 +13,51 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
+    padding-right: 10px;
   }
 
   .example__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 255px;
+    margin-bottom: 243px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .example__header {
+    margin-top: 43px;
+    margin-bottom: 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     border-top: none;
     background-color: $gray;
     z-index: -1;
   }
 
+  .example__header {
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+
+  .example__background {
+    background-color: #ffffff;
+    padding: 15px 0 75px 0;
+  }
+
   .example__wrapper {
     flex-direction: column;
-    margin-bottom: 255px;
+    margin-bottom: 0;
   }
 
   .example__text {
     width: 435px;
+    padding-right: 0;
+    margin-top: 71px;
+    margin-bottom: 70px;
   }
 }
 
@@ -94,6 +114,15 @@
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__mark {
+    background-color: $gray;
+    padding: 0;
+    margin: 0 17px;
   }
 }
 
@@ -115,6 +144,12 @@
     width: 190px;
     font-size: 20px;
     text-align: right;
+    margin-top: 10px;
+  }
+
+  .example__price {
+    margin-top: 8px;
+    display: block;
   }
 
   .example__relative {
@@ -150,33 +185,40 @@
 
 @media (min-width: $desktop-width) {
   .example__total {
-    width: 190px;
+    display: flex;
+    width: 325px;
     font-size: 20px;
-    text-align: right;
+    text-align: left;
+    margin-top: 49px;
+  }
+
+  .example__price {
+    margin-left: auto;
+    margin-top: 0;
   }
 
   .example__relative {
-    position: relative;
-    min-height: 345px;
+    position: static;
+    min-height: 1px;
   }
 
   .example__img-before {
     position: absolute;
-    top: -171px;
-    left: 16px;
+    top: -598px;
+    left: 600px;
     width: 690px;
     height: 517px;
-    clip: rect(auto, 338px, auto, auto);
+    clip: rect(auto, 365px, auto, auto);
   }
 
   .example__img-after {
     display: block;
     position: absolute;
-    top: -171px;
-    left: 16px;
+    top: -598px;
+    left: 600px;
     width: 690px;
     height: 517px;
-    clip: rect(auto, auto, auto, 338px);
+    clip: rect(auto, auto, auto, 365px);
   }
 
   .example__bg-wrapper {
@@ -272,5 +314,13 @@
 
   .example__scale-text:hover {
     border-bottom: 1px solid #989898;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__scale {
+    position: absolute;
+    right: 28px;
+    bottom: -2px;
   }
 }
