@@ -38,19 +38,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__center {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
   .page-header__bg::before {
     content: "";
     display: block;
     position: absolute;
     top: 0;
-    left: 50%;
     transform: translateY(0);
-    width: 100%;
+    width: 50%;
     height: 696px;
-    background-color: $green;
+    background-color: #64a83b;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: right bottom;
     background-size: 720px 696px;
     z-index: -1;
   }
