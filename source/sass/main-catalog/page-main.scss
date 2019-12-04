@@ -14,3 +14,10 @@
     padding: 6px 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main__header {
+    margin-top: 65px;
+    margin-bottom: 28px;
+  }
+}
