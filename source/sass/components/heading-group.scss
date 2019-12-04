@@ -5,3 +5,10 @@
   font-weight: 400;
   font-style: normal;
 }
+
+@media (min-width: $tablet-width) {
+  .heading-group {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}

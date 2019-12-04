@@ -2,10 +2,21 @@
   background-color: $gray;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer {
+    z-index: -1;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-footer {
     padding-top: 3px;
   }
+}
+
+.page-footer-relative {
+  position: relative;
+  margin: 0 auto;
 }
 
 .page-footer__wrapper {
@@ -33,6 +44,11 @@
 
 
 @media (min-width: $tablet-width) {
+  .page-footer-relative {
+    position: relative;
+    margin: 0 auto;
+  }
+
   .page-footer__cooperation-contacts {
     padding: 42px 0 26px;
   }
@@ -64,7 +80,7 @@
     top: 95px;
     left: 110px;
     width: 570px;
-    z-index: 2;
+    z-index: 5;
   }
 
   .page-footer__cooperation-contacts {
@@ -83,10 +99,22 @@
   }
 }
 
+.page-footer__iframe {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  top: 130px;
+  left: 0;
+  z-index: 4;
+}
+
 .page-footer__map {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
+  min-height: 400px;
+  width: 100%;
 
   &::before {
     content: "";
@@ -97,33 +125,48 @@
     left: 130px;
     background: url("../img/map-pin.png") no-repeat;
     background-size: 55px 53px;
+    z-index: 3;
   }
 }
 
+.page-footer__map-img {
+  max-width: 320px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 @media (min-width: $tablet-width) {
+  .page-footer__iframe {
+    top: 200px;
+  }
+
   .page-footer__map {
-    width: 768px;
+    max-width: 768px;
 
     &::before {
       width: 124px;
       height: 106px;
       top: 150px;
-      left: 50%;
-      margin-left: -62px;
+      left: 322px;
       background-size: 124px 106px;
     }
   }
 
   .page-footer__map-img {
-    width: 767px;
-    height: 400px;
+    max-width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer__iframe {
+    top: 0;
+  }
+
   .page-footer__map {
-    width: auto;
-    overflow: hidden;
+    max-width: 1440px;
 
     &::before {
       top: 150px;
@@ -134,7 +177,6 @@
 
   .page-footer__map-img {
     max-width: 1440px;
-    width: auto;
   }
 }
 
