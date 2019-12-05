@@ -249,7 +249,7 @@
     line-height: 20px;
 
     &::after {
-      bottom: 72px;
+      bottom: 64px;
       left: 185px;
       width: 24px;
       height: 11px;
@@ -260,12 +260,5 @@
 @media (min-width: $desktop-width) {
   .problems__link {
     padding-top: 0;
-
-    &::after {
-      bottom: 64px;
-      left: 184px;
-      width: 24px;
-      height: 11px;
-    }
   }
 }
