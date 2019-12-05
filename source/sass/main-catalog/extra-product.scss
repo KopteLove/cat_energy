@@ -57,6 +57,12 @@
     padding-left: 38px;
     margin-left: -40px;
   }
+
+  .extra-product__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .extra-product__item {
@@ -86,6 +92,8 @@
     justify-content: flex-end;
     width: 895px;
     padding: 12px 0 9px;
+    border: none;
+    border-top: 1px solid $line-gray-dark;
   }
 }
 
@@ -223,7 +231,7 @@
   .extra-product__price-all {
     width: 245px;
     min-height: 289px;
-    margin: 50px 0 0 78px;
+    margin: 50px 0 0;
 
     &::before {
       left: 96px;

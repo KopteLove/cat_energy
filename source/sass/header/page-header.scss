@@ -11,7 +11,7 @@
   transform: translateX(-50%);
   width: 100%;
   height: 305px;
-  background-color: $green;
+  background-color: #64a83b;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
@@ -65,7 +65,7 @@
   }
 
   .page-header__wrapper {
-    width: 1220px;
+    max-width: 1220px;
     padding-top: 35px;
   }
 }
@@ -148,7 +148,7 @@
 @media (min-width: $desktop-width) {
   .page-header__img {
     position: absolute;
-    top: 25px;
+    top: -80px;
     left: 480px;
     width: 552px;
     height: 499px;
@@ -169,7 +169,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header__button {
-    top: 339px;
+    top: 233px;
     left: 110px;
   }
 }

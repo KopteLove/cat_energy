@@ -1,5 +1,5 @@
 .container {
-  width: 280px;
+  max-width: 280px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -10,7 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 708px;
+    max-width: 708px;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -31,7 +31,7 @@
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
     padding: 0 30px;
   }
@@ -48,6 +48,6 @@
   }
 
   .container-height {
-    min-height: 577px;
+    min-height: 455px;
   }
 }

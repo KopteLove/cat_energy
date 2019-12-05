@@ -202,23 +202,35 @@
     min-height: 1px;
   }
 
-  .example__img-before {
+  .example__hidden {
     position: absolute;
     top: -598px;
-    left: 600px;
+    right: 130px;
+    width: 690px;
+    height: 517px;
+    overflow: hidden;
+    transform: translateX(-30px);
+  }
+
+  .example__img-before {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 690px;
     height: 517px;
     clip: rect(auto, 365px, auto, auto);
+    transform: translateX(60px);
   }
 
   .example__img-after {
     display: block;
     position: absolute;
-    top: -598px;
-    left: 600px;
+    top: 0;
+    left: 0;
     width: 690px;
     height: 517px;
     clip: rect(auto, auto, auto, 365px);
+    transform: translateX(60px);
   }
 
   .example__bg-wrapper {
@@ -320,7 +332,7 @@
 @media (min-width: $desktop-width) {
   .example__scale {
     position: absolute;
-    right: 28px;
+    right: 138px;
     bottom: -2px;
   }
 }
