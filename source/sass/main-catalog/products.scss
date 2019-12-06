@@ -1,3 +1,24 @@
 .products__list {
   @include list-reset();
 }
+
+@media (min-width: $tablet-width) {
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 708px;
+    width: auto;
+    padding: 132px 30px 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__list {
+    max-width: 1220px;
+    width: auto;
+    padding: 132px 30px 0;
+  }
+}

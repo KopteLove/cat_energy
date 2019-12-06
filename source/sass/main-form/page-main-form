@@ -1,0 +1,14 @@
+@media (min-width: $tablet-width) {
+  .page-main__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 330px;
+    margin: 50px 0 10px 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__text {
+    margin: 50px 0 10px;
+  }
+}

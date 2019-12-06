@@ -13,6 +13,13 @@
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding-left: 30px;
+    width: 126px;
+  }
+}
+
 .social__item {
   @include list-reset();
 }
@@ -23,4 +30,34 @@
   align-items: center;
   width: 30px;
   height: 30px;
+
+  &:hover svg {
+    fill: $green;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+    padding: 59px 0;
+  }
+
+  .social__vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__ig {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__fb {
+    width: 14px;
+    height: 28px;
+  }
 }

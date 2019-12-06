@@ -7,3 +7,17 @@
   color: #111111;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .heading-secondary {
+    font-size: 60px;
+    margin: 48px 0 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .heading-secondary {
+    font-size: 60px;
+    margin: 42px 0;
+  }
+}

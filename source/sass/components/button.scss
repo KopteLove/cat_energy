@@ -7,8 +7,33 @@
   background-color: $green;
   text-decoration: none;
   text-align: center;
+  outline: none;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 10px 0;
+  }
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5eaa2f;
 }
 
 .button--gray {
   background-color: $gray;
+}
+
+.button--gray:hover {
+  background-color: #ebebeb;
+}
+
+.button--gray:active {
+  background-color: #ebebeb;
+  color: rgba(0, 0, 0, 0.3);
 }

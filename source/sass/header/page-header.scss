@@ -1,20 +1,93 @@
+.page-header__bg {
+  position: relative;
+  overflow: hidden;
+}
+
 .page-header__bg::before {
   content: "";
   position: absolute;
   top: 66px;
   left: 50%;
   transform: translateX(-50%);
-  min-width: 320px;
-  min-height: 305px;
-  background-color: $green;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  width: 100%;
+  height: 305px;
+  background-color: #64a83b;
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 0;
+  background-size: 320px 305px;
   z-index: -1;
 }
 
-.page-header__container {
-  position: relative;
+@media (min-width: $tablet-width) {
+  .page-header__center {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .page-header__bg::before {
+    content: "";
+    display: none;
+  }
+
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__center {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  .page-header__bg::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    transform: translateY(0);
+    width: 50%;
+    height: 696px;
+    background-color: #64a83b;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 720px 696px;
+    z-index: -1;
+  }
+
+  .page-header__wrapper {
+    max-width: 1220px;
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__text {
+    width: 419px;
+    font-weight: 400;
+    font-style: normal;
+    color: #111111;
+    margin-left: 88px;
+    margin-top: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__text {
+    width: 419px;
+    color: #111111;
+    margin-left: 80px;
+    margin-top: 105px;
+  }
 }
 
 .page-header__header {
@@ -25,9 +98,21 @@
   font-style: normal;
   color: #ffffff;
   text-align: center;
+  text-transform: uppercase;
 }
 
-.page-header__text {
+@media (min-width: $tablet-width) {
+  .page-header__header {
+    font-family: "Oswald", "Verdana", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+    text-align: left;
+    text-transform: none;
+  }
+}
+
+.page-header__slogan {
   font-family: "Oswald", "Verdana", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -35,5 +120,56 @@
   font-style: normal;
   color: #ffffff;
   text-align: center;
-  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: inherit;
+    text-align: left;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.page-header__img {
+  width: 280px;
+  height: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__img {
+    width: 709px;
+    height: 609px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__img {
+    position: absolute;
+    top: -80px;
+    left: 480px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__button {
+    font-size: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 229px;
+    left: 119px;
+    width: 245px;
+    padding: 16px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__button {
+    top: 234px;
+    left: 110px;
+  }
 }
