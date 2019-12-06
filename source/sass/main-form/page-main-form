@@ -6,3 +6,9 @@
     margin: 50px 0 10px 40px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-main__text {
+    margin: 50px 0 10px;
+  }
+}

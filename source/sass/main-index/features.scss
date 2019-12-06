@@ -43,15 +43,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features__list {
+    justify-content: space-between;
+  }
+
   .features__item {
     width: 245px;
-    margin: 31px 80px 45px 0;
+    margin: 31px 0 45px;
     box-sizing: border-box;
     padding-top: 97px;
-
-    &:nth-child(2n) {
-      margin-right: 80px;
-    }
 
     &:nth-child(4n) {
       margin-right: 0;
