@@ -5,8 +5,12 @@
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
-  padding: 25px 0;
+  padding-top: 19px;
   color: #444444;
+}
+
+.developer__svg {
+  margin-right: -6px;
 }
 
 .developer__link:hover svg {
@@ -19,7 +23,10 @@
 
 @media (min-width: $tablet-width) {
   .developer__svg {
-    margin-right: -6px;
     margin-left: 15px;
+  }
+
+  .developer__link {
+    padding-top: 4px;
   }
 }

@@ -1,5 +1,9 @@
 .features {
-  padding-bottom: 20px;
+  padding-bottom: 22px;
+}
+
+.features__header {
+  margin: -3px 0 28px 0;
 }
 
 .features__list {
@@ -9,6 +13,10 @@
 @media (min-width: $tablet-width) {
   .features {
     padding-bottom: 14px;
+  }
+
+  .features__header {
+    margin: 44px 0 27px;
   }
 
   .features__list {
@@ -23,7 +31,7 @@
 .features__item {
   position: relative;
   padding-left: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,6 +51,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features__header {
+    margin: 44px 0 40px;
+  }
+
   .features__list {
     justify-content: space-between;
   }
@@ -111,6 +123,10 @@
   }
 }
 
+.features__text br {
+  display: none;
+}
+
 .features__text::before {
   content: "";
   position: absolute;
@@ -121,6 +137,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features__text br {
+    display: block;
+  }
+
   .features__text {
     width: 250px;
 

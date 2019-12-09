@@ -1,5 +1,12 @@
 .example {
   background-color: $gray;
+  padding-top: 17px;
+}
+
+.example__text {
+  margin-top: 23px;
+  margin-bottom: 25px;
+  padding-right: 1px;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,6 +31,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    padding-top: 0;
+  }
+
   .example__header {
     margin-top: 43px;
     margin-bottom: 64px;
@@ -133,10 +144,24 @@
   text-align: center;
   text-transform: uppercase;
   color: #111111;
+  margin-top: 10px;
 }
 
 .example__img-after {
   display: none;
+}
+
+.example__bg-wrapper {
+  padding-top: 20px;
+}
+
+.example__hidden {
+  transform: translateX(-20px);
+}
+
+.example__img-after,
+.example__img-before {
+  max-width: 320px;
 }
 
 @media (min-width: $tablet-width) {
@@ -144,7 +169,6 @@
     width: 190px;
     font-size: 20px;
     text-align: right;
-    margin-top: 10px;
   }
 
   .example__price {
@@ -157,11 +181,16 @@
     min-height: 345px;
   }
 
+  .example__hidden {
+    transform: translateX(0);
+  }
+
   .example__img-before {
     position: absolute;
     top: -171px;
     left: 16px;
     width: 690px;
+    max-width: 690px;
     height: 517px;
     clip: rect(auto, 338px, auto, auto);
   }
@@ -172,12 +201,14 @@
     top: -171px;
     left: 16px;
     width: 690px;
+    max-width: 690px;
     height: 517px;
     clip: rect(auto, auto, auto, 338px);
   }
 
   .example__bg-wrapper {
     background-color: $gray;
+    padding-top: 0;
     padding-bottom: 50px;
     z-index: -1;
   }
@@ -232,19 +263,15 @@
     clip: rect(auto, auto, auto, 365px);
     transform: translateX(60px);
   }
-
-  .example__bg-wrapper {
-    background-color: $gray;
-    padding-bottom: 50px;
-    z-index: -1;
-  }
 }
 
 .example__scale {
   display: flex;
   justify-content: space-between;
-  width: 200px;
-  margin: 0 auto;
+  width: 197px;
+  margin-left: 44px;
+  margin-top: 12px;
+  padding-bottom: 20px;
 }
 
 .example__scale-slider {
@@ -274,6 +301,7 @@
     justify-content: space-between;
     width: 570px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .example__scale-slider {

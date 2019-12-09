@@ -1,5 +1,5 @@
 .problems {
-  padding-top: 20px;
+  padding-top: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -32,8 +32,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: 17px;
-    left: 20px;
+    top: 25px;
+    left: 22px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -79,8 +79,8 @@
 .problems__item--sitting::after {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 28px;
+  top: 23px;
+  left: 30px;
   width: 35px;
   height: 49px;
   background-image: url("../img/icon-cat-slim.svg");
@@ -108,8 +108,8 @@
 .problems__item--going::after {
   content: "";
   position: absolute;
-  top: 27px;
-  left: 10px;
+  top: 35px;
+  left: 13px;
   width: 67px;
   height: 28px;
   background-image: url("../img/icon-cat-pro.svg");
@@ -160,20 +160,14 @@
   font-weight: 400;
   font-style: normal;
   color: #111111;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
-  margin: 0;
+  margin: 10px 0 0 71px;
 }
-
-.problems__header--margin {
-  margin-left: 30px;
-}
-
 
 @media (min-width: $tablet-width) {
   .problems__header {
     font-size: 36px;
-    text-align: left;
     margin: 0;
   }
 }
@@ -185,8 +179,9 @@
 }
 
 .problems__text {
-  margin-top: 34px;
-  padding-bottom: 25px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  padding-bottom: 22px;
   border-bottom: 1px solid $border-grey;
 }
 
@@ -209,6 +204,7 @@
   .problems__text {
     margin-top: 73px;
     margin-right: 0;
+    margin-bottom: 15px;
     padding-bottom: 17px;
   }
 }

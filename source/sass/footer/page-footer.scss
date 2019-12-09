@@ -31,20 +31,25 @@
 .page-footer__cooperation-contacts {
   display: flex;
   justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 26px;
 }
 
 .page-footer__cooperation {
-  padding: 25px 0;
   margin: 0;
   font-style: normal;
 }
 
 .page-footer__contacts {
+  width: 187px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  padding: 25px 0;
   font-style: normal;
+}
+
+.page-footer__contacts br {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -61,7 +66,7 @@
     font-size: 20px;
     line-height: 25px;
     width: 155px;
-    padding-left: 40px;
+    padding: 25px 0 25px 40px;
   }
 
   .page-footer__contacts {
@@ -69,6 +74,10 @@
     font-size: 16px;
     padding: 21px 41px;
     text-align: right;
+  }
+
+  .page-footer__contacts br {
+    display: block;
   }
 }
 
@@ -110,8 +119,8 @@
 .page-footer__iframe {
   position: absolute;
   width: 100%;
-  height: 400px;
-  top: 130px;
+  height: 362px;
+  top: 114px;
   left: 0;
   z-index: 4;
 }
@@ -121,7 +130,7 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  min-height: 400px;
+  min-height: 362px;
   width: 100%;
 
   &::before {
@@ -139,9 +148,10 @@
 
 .page-footer__map-img {
   max-width: 320px;
-  width: auto;
+  width: 320px;
+  height: 400px;
   position: absolute;
-  top: 0;
+  top: -38px;
   left: 0;
   z-index: 2;
 }
@@ -153,6 +163,7 @@
 
   .page-footer__map {
     max-width: 768px;
+    min-height: 400px;
 
     &::before {
       width: 124px;
@@ -189,7 +200,7 @@
 }
 
 .page-footer__logo {
-  padding: 35px 0;
+  padding: 39px 0 31px;
 }
 
 .page-footer__logo-link {
@@ -208,5 +219,11 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    padding-bottom: 33px;
   }
 }
