@@ -22,6 +22,7 @@
   .features__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     font-size: 16px;
     line-height: 24px;
     counter-reset: item;
@@ -39,7 +40,7 @@
     width: 324px;
     min-height: 230px;
     position: relative;
-    margin: 45px 60px 42px 0;
+    margin: 45px 0 42px 0;
     padding-left: 0;
     padding-top: 96px;
     box-sizing: border-box;
@@ -53,10 +54,6 @@
 @media (min-width: $desktop-width) {
   .features__header {
     margin: 44px 0 40px;
-  }
-
-  .features__list {
-    justify-content: space-between;
   }
 
   .features__item {
