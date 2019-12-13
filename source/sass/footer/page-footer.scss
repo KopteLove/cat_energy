@@ -83,16 +83,13 @@
 @media (min-width: $desktop-width) {
   .page-footer-relative {
     position: relative;
-    max-width: 1440px;
     margin: 0 auto;
   }
 
   .page-footer__wrapper {
-    position: absolute;
-    top: 95px;
-    left: 110px;
-    width: 570px;
-    z-index: 5;
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .page-footer__wrapper--color {
@@ -101,8 +98,13 @@
 
   .page-footer__cooperation-contacts {
     width: 570px;
+    position: absolute;
     padding: 40px 90px 31px 75px;
     box-sizing: border-box;
+    z-index: 5;
+    background-color: #ffffff;
+    top: 95px;
+    left: 110px;
   }
 
   .page-footer__cooperation {

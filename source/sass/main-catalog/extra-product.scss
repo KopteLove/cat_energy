@@ -95,7 +95,7 @@
 @media (min-width: $desktop-width) {
   .extra-product__item {
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 895px;
     padding: 12px 0 9px;
     border: none;

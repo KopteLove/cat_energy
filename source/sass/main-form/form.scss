@@ -138,11 +138,13 @@
 }
 
 .form__input:focus {
-  border: 2px solid #444444;
+  border: 1px solid #444444;
+  box-shadow: 0 0 0 1px #444444;
 }
 
 .form__input--invalid {
-  border: 2px solid #ff8282;
+  border: 1px solid #ff8282;
+  box-shadow: 0 0 0 1px #ff8282;
 }
 
 .form__input:focus ~ svg {
@@ -245,14 +247,6 @@
   display: block;
 }
 
-.form__radio-label:hover::before {
-  border: 1px solid #bababa;
-}
-
-.form__radio-input:active ~ label {
-  opacity: 0.3;
-}
-
 .form__radio-input:disabled ~ label {
   opacity: 0.3;
   cursor: default;
@@ -264,10 +258,12 @@
   border: 1px solid $border-grey;
 }
 
-.form__radio-input:active ~ label::after,
-.form__radio-input:active ~ label::before {
+.form__radio-label:active {
   opacity: 0.3;
-  border: 1px solid $border-grey;
+}
+
+.form__radio-label:hover::before {
+  border: 1px solid #bababa;
 }
 
 .form__fieldset--contacts {
@@ -646,13 +642,7 @@ input[type="tel"] + label {
   border-color: #bababa;
 }
 
-.form__checkbox-input:active ~ label::after,
-.form__checkbox-input:active ~ label {
-  opacity: 0.3;
-}
-
-.form__checkbox-input::before {
-  border: 1px solid $border-grey;
+.form__checkbox-label:active {
   opacity: 0.3;
 }
 
