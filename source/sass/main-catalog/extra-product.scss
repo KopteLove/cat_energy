@@ -67,6 +67,7 @@
   .extra-product__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
 }
@@ -144,10 +145,6 @@
     margin-right: 50px;
   }
 
-  .extra-product__item:nth-child(2) .extra-product__value:first-child {
-    margin-right: 60px;
-  }
-
   .extra-product__title {
     font-size: 20px;
     line-height: 20px;
@@ -156,6 +153,11 @@
   .extra-product__value {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .extra-product__value--price {
+    min-width: 44px;
+    text-align: right;
   }
 }
 
@@ -265,3 +267,4 @@
     text-align: center;
   }
 }
+

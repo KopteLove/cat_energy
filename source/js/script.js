@@ -86,6 +86,8 @@ if (form) {
         } else {
           if (!email.value) {
             email.focus();
+          } else {
+            phone.focus();
           }
         }
       }

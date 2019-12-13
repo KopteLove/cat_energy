@@ -20,7 +20,6 @@
     border: none;
     display: flex;
     width: 324px;
-    min-height: 431px;
     background-color: $gray;
     box-sizing: border-box;
     margin-bottom: 140px;
@@ -65,9 +64,8 @@
 @media (min-width: $tablet-width) {
   .product__flex {
     width: 324px;
-    min-height: 431px;
+    position: relative;
     padding: 0;
-    transform: translateY(-82px);
   }
 
   .product__img {
@@ -77,6 +75,8 @@
 
   .product__link-img {
     min-height: 208px;
+    position: absolute;
+    top: -82px;
     display: flex;
     align-items: flex-end;
   }
@@ -85,15 +85,6 @@
 @media (min-width: $desktop-width) {
   .product__flex {
     width: 245px;
-    min-height: 431px;
-    padding: 0;
-    transform: translateY(-82px);
-  }
-
-  .product__link-img {
-    min-height: 208px;
-    display: flex;
-    align-items: flex-end;
   }
 }
 
@@ -116,7 +107,7 @@
 @media (min-width: $tablet-width) {
   .product__wrapper {
     width: 253px;
-    margin: 38px auto 10px auto;
+    margin: 164px auto 10px auto;
   }
 
   .product__title {
@@ -134,7 +125,6 @@
 @media (min-width: $desktop-width) {
   .product__wrapper {
     width: 100%;
-    margin: 38px auto 10px auto;
     padding: 0 38px;
   }
 
@@ -196,7 +186,7 @@
 @media (min-width: $tablet-width) {
   .product__button {
     width: 248px;
-    margin: 33px auto -42px;
+    margin: 33px auto 40px;
   }
 
   .product--more {
@@ -208,7 +198,7 @@
 @media (min-width: $desktop-width) {
   .product__button {
     width: 100%;
-    margin: 23px 38px -42px;
+    margin: 23px 38px 40px;
   }
 }
 
@@ -244,8 +234,6 @@
 @media (min-width: $tablet-width) {
   .product__flex--pseudo {
     display: block;
-    transform: translateY(0);
-    min-height: 431px;
 
     &::before {
       width: 60px;
@@ -274,7 +262,7 @@
     width: 248px;
     padding: 10px 0;
     color: #444444;
-    margin: 0 auto;
+    margin: 0 auto 40px;
   }
 }
 

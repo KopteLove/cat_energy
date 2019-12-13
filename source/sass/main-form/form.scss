@@ -137,14 +137,15 @@
   border: 1px solid $line-gray-dark;
 }
 
+.form__textarea:focus,
 .form__input:focus {
   border: 1px solid #444444;
-  box-shadow: 0 0 0 1px #444444;
+  box-shadow: inset 0 0 0 1px #444444;
 }
 
 .form__input--invalid {
   border: 1px solid #ff8282;
-  box-shadow: 0 0 0 1px #ff8282;
+  box-shadow: inset 0 0 0 1px #ff8282;
 }
 
 .form__input:focus ~ svg {
@@ -456,6 +457,7 @@ input[type="tel"] + label {
   text-transform: uppercase;
   padding: 14px 13px;
   border: 1px solid #e6e6e6;
+  outline: none;
 }
 
 .form__textarea:hover {
