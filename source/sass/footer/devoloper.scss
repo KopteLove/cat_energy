@@ -30,3 +30,9 @@
     padding-top: 4px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .developer__link {
+    padding-top: 0;
+  }
+}

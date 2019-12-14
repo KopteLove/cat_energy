@@ -10,7 +10,7 @@
 
 @media (min-width: $desktop-width) {
   .extra-product__list {
-    margin: 51px 0 0;
+    margin: 47px 0 0;
   }
 }
 
@@ -61,7 +61,7 @@
 
 @media (min-width: $desktop-width) {
   .extra-product::after {
-    top: 49px;
+    top: 48px;
   }
 
   .extra-product__flex {
@@ -182,6 +182,7 @@
   .extra-product-info {
     width: 285px;
     margin-right: 40px;
+    padding: 18px 0 12px;
   }
 
   .extra-product__title {
@@ -260,7 +261,7 @@
   .extra-product__price-all {
     width: 245px;
     min-height: 289px;
-    margin: 51px 0 0;
+    margin: 50px 0 0;
 
     &::before {
       left: 96px;
@@ -275,7 +276,7 @@
 
   .extra-product__text {
     align-self: flex-end;
-    margin: 0 37px 41px 0;
+    margin: 0 37px 42px 0;
     text-align: center;
   }
 }

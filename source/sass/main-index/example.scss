@@ -43,9 +43,9 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    display: block;
     border-top: none;
     background-color: $gray;
+    padding-bottom: 3px;
     z-index: -1;
   }
 
@@ -187,7 +187,7 @@
 
   .example__img-before {
     position: absolute;
-    top: -171px;
+    top: -169px;
     left: 16px;
     width: 690px;
     max-width: 690px;
@@ -198,7 +198,7 @@
   .example__img-after {
     display: block;
     position: absolute;
-    top: -171px;
+    top: -169px;
     left: 16px;
     width: 690px;
     max-width: 690px;
@@ -287,7 +287,7 @@
     content: "";
     position: absolute;
     top: 3px;
-    left: 5px;
+    left: 6px;
     width: 35px;
     height: 6px;
     background-color: $green;
@@ -313,7 +313,7 @@
     align-self: center;
 
     &::before {
-      top: -14px;
+      top: -13px;
       left: 197px;
       width: 34px;
       height: 34px;
@@ -326,7 +326,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: -1px;
+      top: 0;
       left: 210px;
       width: 8px;
       height: 8px;

@@ -1,16 +1,12 @@
 .page-footer {
   background-color: $gray;
+  padding-bottom: 19px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     z-index: -1;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer {
-    padding-top: 3px;
+    padding-bottom: 0;
   }
 }
 
@@ -99,7 +95,7 @@
   .page-footer__cooperation-contacts {
     width: 570px;
     position: absolute;
-    padding: 40px 90px 31px 75px;
+    padding: 41px 90px 36px 75px;
     box-sizing: border-box;
     z-index: 5;
     background-color: #ffffff;
@@ -109,12 +105,17 @@
 
   .page-footer__cooperation {
     padding-left: 0;
+    padding-top: 22px;
   }
 
   .page-footer__contacts {
     padding-right: 0;
     text-align: left;
   }
+}
+
+.page-footer__section-map {
+  position: relative;
 }
 
 .page-footer__iframe {
@@ -225,6 +226,8 @@
   }
 }
 
-.page-footer__section-map {
-  position: relative;
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    padding-bottom: 38px;
+  }
 }

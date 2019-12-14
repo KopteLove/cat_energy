@@ -20,6 +20,13 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .social__list {
+    padding-left: 29px;
+    width: 131px;
+  }
+}
+
 .social__item {
   @include list-reset();
 }
@@ -64,6 +71,6 @@
 
 @media (min-width: $desktop-width) {
   .social {
-    padding: 55px 0 61px;
+    padding: 57px 0 60px;
   }
 }

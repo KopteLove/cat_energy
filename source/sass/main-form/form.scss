@@ -498,6 +498,12 @@ input[type="tel"] + label {
   }
 }
 
+@media (min-width: $desktop-width) {
+  .form__fieldset--textarea::after {
+    top: 33px;
+  }
+}
+
 .form__fieldset--checkbox {
   padding-top: 0;
 

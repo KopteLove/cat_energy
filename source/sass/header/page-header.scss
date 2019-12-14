@@ -2,6 +2,10 @@
   border-bottom: 1px solid $line-gray-all;
 }
 
+.page-header__center--noborder {
+  border-bottom: none;
+}
+
 .page-header__bg {
   position: relative;
 }
@@ -76,7 +80,7 @@
 }
 
 .page-header__text {
-  margin-top: 27px;
+  margin-top: 28px;
 }
 
 @media (min-width: $tablet-width) {
@@ -126,7 +130,7 @@
   font-weight: 400;
   font-style: normal;
   color: #ffffff;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
 }
