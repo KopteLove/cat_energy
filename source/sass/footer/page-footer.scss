@@ -158,6 +158,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer__iframe {
+    height: 400px;
+  }
+
   .page-footer__map {
     max-width: 768px;
     min-height: 400px;

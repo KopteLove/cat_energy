@@ -44,6 +44,7 @@
 @media (min-width: $desktop-width) {
   .product {
     width: 245px;
+    margin-bottom: 144px;
   }
 
   .product:last-child,
@@ -164,6 +165,12 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .product__string {
+    padding: 8px 0 7px;
+  }
+}
+
 .product__parameter {
   padding: 0;
 }
@@ -198,7 +205,7 @@
 @media (min-width: $desktop-width) {
   .product__button {
     width: 100%;
-    margin: 23px 38px 40px;
+    margin: 24px 38px 40px;
   }
 }
 
