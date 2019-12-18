@@ -113,8 +113,9 @@
   }
 
   .form__input {
+    min-width: 215px;
     height: 52px;
-    padding-left: 18px;
+    padding: 14px 0 14px 18px;
   }
 
   input[name="weight"] + label {
@@ -319,6 +320,7 @@ input[type="tel"] + label {
   flex-wrap: wrap;
   width: 280px;
   margin: 0 auto;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -450,6 +452,8 @@ input[type="tel"] + label {
 
 .form__textarea {
   width: 100%;
+  min-height: 151px;
+  margin-bottom: 5px;
   margin-top: 34px;
   box-sizing: border-box;
 
@@ -487,7 +491,9 @@ input[type="tel"] + label {
   }
 
   .form__textarea {
+    min-height: 173px;
     margin-top: 76px;
+    margin-bottom: 0;
     padding: 15px 19px;
   }
 

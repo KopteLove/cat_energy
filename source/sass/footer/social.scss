@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 135px;
+  width: 138px;
   margin: 0 auto;
   padding: 0;
 }
@@ -16,7 +16,7 @@
 @media (min-width: $tablet-width) {
   .social__list {
     padding-left: 30px;
-    width: 126px;
+    width: 133px;
   }
 }
 
@@ -50,7 +50,7 @@
 @media (min-width: $tablet-width) {
   .social {
     border: none;
-    padding: 63px 0;
+    padding: 54px 0 61px;
   }
 
   .social__vk {

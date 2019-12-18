@@ -62,15 +62,19 @@
     margin: 0 auto;
   }
 
-  .page-header__bg::before {
-    display: block;
-    top: 0;
-    transform: translateY(0);
-    width: 50%;
-    height: 696px;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-position: right bottom;
-    background-size: 720px 696px;
+  .page-header__bg {
+    min-height: 696px;
+
+    &::before {
+      display: block;
+      top: 0;
+      transform: translateY(0);
+      width: 50%;
+      height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position: right bottom;
+      background-size: 720px 696px;
+    }
   }
 
   .page-header__wrapper {

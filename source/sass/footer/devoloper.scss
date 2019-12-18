@@ -22,16 +22,24 @@
 }
 
 @media (min-width: $tablet-width) {
+  .developer {
+    padding-bottom: 7px;
+  }
+
   .developer__svg {
     margin-left: 15px;
   }
 
   .developer__link {
-    padding-top: 4px;
+    padding-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .developer {
+    padding-bottom: 0;
+  }
+
   .developer__link {
     padding-top: 0;
   }
