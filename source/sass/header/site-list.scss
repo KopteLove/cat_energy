@@ -32,16 +32,18 @@
   }
 }
 
-.site-list__item {
-  border-bottom: 1px solid $line-gray-all;
+@media (max-width: $mobil-width) {
+  .site-list__item:not(:last-child) {
+    border-bottom: 1px solid $line-gray-all;
+  }
 }
 
-.site-list__item:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
+.site-list a[href]:hover {
+  opacity: 0.6;
 
-.site-list__item:active {
-  color: rgba(0, 0, 0, 0.3);
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item:nth-child(1) {
@@ -86,13 +88,5 @@
 @media (min-width: $desktop-width) {
   .site-list__link--white {
     color: #ffffff;
-  }
-
-  .site-list__link--white:hover {
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  .site-list__link--white:active {
-    color: rgba(255, 255, 255, 0.3);
   }
 }

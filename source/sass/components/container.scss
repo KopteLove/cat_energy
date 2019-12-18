@@ -6,6 +6,7 @@
 
 .container--relative {
   position: relative;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -46,5 +47,6 @@
 
   .container-height {
     min-height: 455px;
+    padding: 0;
   }
 }

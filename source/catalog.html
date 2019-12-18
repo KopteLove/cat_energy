@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи каталог продукции</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -18,7 +19,7 @@
             <img class="logo__img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип компании Кэт энерджи">
           </picture>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="container container--relative">
             <button class="main-nav__toggle" type="button"></button>
           </div>
@@ -27,7 +28,7 @@
               <a href="index.html" class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="catalog.html" class="site-list__link">Каталог продукции</a>
+              <a class="site-list__link">Каталог продукции</a>
             </li>
             <li class="site-list__item">
               <a href="form.html" class="site-list__link">Подбор программы</a>
@@ -287,10 +288,10 @@
           <ul class="extra-product__list">
 
             <li class="extra-product__item">
-              <span class="extra-product__title">Сахаразаменитель</span>
+              <span class="extra-product__title">Сахарозаменитель</span>
               <div class="extra-product-info">
                 <span class="extra-product__value">1 упаковка (100 г)</span>
-                <span class="extra-product__value">200 Р.</span>
+                <span class="extra-product__value extra-product__value--price">200 Р.</span>
               </div>
               <a href="#" class="extra-product__button button">Заказать</a>
             </li>
@@ -299,7 +300,7 @@
               <span class="extra-product__title">Питьевая вода</span>
               <div class="extra-product-info">
                 <span class="extra-product__value">5 литров</span>
-                <span class="extra-product__value">50 Р.</span>
+                <span class="extra-product__value extra-product__value--price">50 Р.</span>
               </div>
               <a href="#" class="extra-product__button button">Заказать</a>
             </li>
@@ -308,7 +309,7 @@
               <span class="extra-product__title">Молоко</span>
               <div class="extra-product-info">
                 <span class="extra-product__value">1 литр</span>
-                <span class="extra-product__value">100 Р.</span>
+                <span class="extra-product__value extra-product__value--price">100 Р.</span>
               </div>
               <a href="#" class="extra-product__button button">Заказать</a>
             </li>
@@ -317,7 +318,7 @@
               <span class="extra-product__title">Витамины</span>
               <div class="extra-product-info">
                 <span class="extra-product__value">1 упаковка (30 г)</span>
-                <span class="extra-product__value">300 Р.</span>
+                <span class="extra-product__value extra-product__value--price">300 Р.</span>
               </div>
               <a href="#" class="extra-product__button button">Заказать</a>
             </li>
@@ -336,29 +337,32 @@
   </main>
 
   <footer class="page-footer">
-
-    <iframe class="page-footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894615787456!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1575458147443!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
-
     <div class="page-footer-relative">
 
-      <div class="page-footer__wrapper page-footer__wrapper--color">
+      <div class="page-footer__wrapper">
         <div class="page-footer__cooperation-contacts container">
-          <p class="page-footer__cooperation text-title">Приглашаем <br> к сотрудничеству дилеров</p>
+          <p class="page-footer__cooperation text-title">Приглашаем <br> к сотрудничеству дилеров!</p>
           <address class="page-footer__contacts">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</address>
         </div>
       </div>
 
-      <div class="page-footer__map">
-        <picture>
-          <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-          <img class="page-footer__map-img" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта «Как до нас доехать!?»">
-        </picture>
-      </div>
+      <section class="page-footer__section-map">
+        <h2 class="visually-hidden">Карта</h2>
+        <iframe class="page-footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894615787456!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1575458147443!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+        <div class="page-footer__map">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.png">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+            <img class="page-footer__map-img" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта «Как до нас доехать!?»">
+          </picture>
+        </div>
+      </section>
+
     </div>
+
     <div class="container container-flex">
       <div class="page-footer__logo">
-        <a href="index.html" class="page-footer__logo-link"></a>
+        <a class="page-footer__logo-link"></a>
       </div>
 
       <div class="social">
@@ -399,6 +403,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 
 </body>
 </html>

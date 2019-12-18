@@ -1,5 +1,5 @@
 .social {
-  padding: 20px 0;
+  padding: 18px 0 14px 0;
   border-top: 1px solid $border-grey;
   border-bottom: 1px solid $border-grey;
 }
@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 135px;
+  width: 138px;
   margin: 0 auto;
   padding: 0;
 }
@@ -16,7 +16,14 @@
 @media (min-width: $tablet-width) {
   .social__list {
     padding-left: 30px;
-    width: 126px;
+    width: 133px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    padding-left: 29px;
+    width: 131px;
   }
 }
 
@@ -43,7 +50,7 @@
 @media (min-width: $tablet-width) {
   .social {
     border: none;
-    padding: 59px 0;
+    padding: 54px 0 61px;
   }
 
   .social__vk {
@@ -59,5 +66,11 @@
   .social__fb {
     width: 14px;
     height: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding: 57px 0 60px;
   }
 }

@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding: 16px 0;
+  padding: 10px 0;
   font-family: "Oswald", "Verdana", sans-serif;
   text-transform: uppercase;
   color: #ffffff;
@@ -8,12 +8,6 @@
   text-decoration: none;
   text-align: center;
   outline: none;
-}
-
-@media (min-width: $tablet-width) {
-  .button {
-    padding: 10px 0;
-  }
 }
 
 .button:hover {
