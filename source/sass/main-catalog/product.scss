@@ -1,9 +1,11 @@
 .product {
   border-bottom: 1px solid $line-gray-all;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
+  min-height: 209px;
+  box-sizing: border-box;
 }
 
-.product:first-child {
+.products__list .product:first-child {
   border-top: 1px solid $line-gray-all;
 }
 
@@ -20,6 +22,7 @@
     border: none;
     display: flex;
     width: 324px;
+    min-height: 431px;
     background-color: $gray;
     box-sizing: border-box;
     margin-bottom: 140px;
@@ -51,7 +54,7 @@
   .product:nth-last-child(2),
   .product:nth-last-child(3),
   .product:nth-last-child(4) {
-    margin-bottom: 47px;
+    margin-bottom: 49px;
   }
 
   .product__flex {
@@ -70,16 +73,13 @@
   }
 
   .product__img {
-    width: 324px;
+    width: 100%;
     margin-bottom: -4px;
   }
 
   .product__link-img {
-    min-height: 208px;
     position: absolute;
-    top: -82px;
-    display: flex;
-    align-items: flex-end;
+    bottom: 304px;
   }
 }
 
@@ -91,13 +91,14 @@
 
 .product__wrapper {
   width: 140px;
+  align-self: stretch;
 }
 
 .product__link-title {
   display: block;
   text-decoration: none;
   text-align: left;
-  padding-bottom: 10px;
+  margin: 21px 0 12px;
 }
 
 .product__title {
@@ -107,8 +108,8 @@
 
 @media (min-width: $tablet-width) {
   .product__wrapper {
-    width: 253px;
-    margin: 164px auto 10px auto;
+    width: 248px;
+    margin: 163px auto 0 auto;
   }
 
   .product__title {
@@ -119,7 +120,7 @@
   }
 
   .product__link-title {
-    padding-bottom: 17px;
+    margin-bottom: 21px;
   }
 }
 
@@ -127,6 +128,7 @@
   .product__wrapper {
     width: 100%;
     padding: 0 38px;
+    margin-top: 141px;
   }
 
   .product__title {
@@ -135,14 +137,15 @@
   }
 
   .product__link-title {
-    padding-bottom: 17px;
+    margin-bottom: 19px;
   }
 }
 
 .product__info {
-  width: 143px;
+  width: 141px;
   font-size: 12px;
   line-height: 16px;
+  padding-left: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -162,6 +165,10 @@
   .product__string {
     border-bottom: 1px solid $line-gray-dark;
     padding: 7px 0;
+  }
+
+  .product:first-child .product__string:first-child {
+    padding-top: 6px;
   }
 }
 
@@ -183,7 +190,7 @@
   width: 100%;
   color: #ffffff;
   margin-top: -4px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .product--more {
@@ -205,7 +212,7 @@
 @media (min-width: $desktop-width) {
   .product__button {
     width: 100%;
-    margin: 20px 38px 40px;
+    margin: 33px 38px 40px;
   }
 }
 
@@ -284,6 +291,7 @@
 
   .product__more-text {
     padding: 0 30px;
+    margin: 26px 0 87px;
   }
 
   .product__more-button {

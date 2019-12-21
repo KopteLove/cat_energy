@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <script src="js/picturefill-mini.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,9 +43,9 @@
           <p class="page-header__slogan">Занялся собой? Займись котом!</p>
         </div>
         <picture>
-          <source media="(min-width: 1280px)" srcset="img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <img class="page-header__img" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Фото «Cat energy pro 500 г»">
+          <source media="(min-width: 1280px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img class="page-header__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Фото «Cat energy pro 500 г»">
         </picture>
         <a href="form.html" class="page-header__button button">Подобрать программу</a>
       </div>
@@ -164,14 +165,14 @@
           <div class="example__relative">
             <div class="example__hidden">
               <picture>
-                <source media="(min-width: 1280px)" srcset="img/before-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-                <img class="example__img-before" src="img/before-mobile@1x.png" width="320" height="240" alt="Результат на котике">
+                <source media="(min-width: 1280px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="example__img-before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Результат на котике">
               </picture>
               <picture>
-                <source media="(min-width: 1280px)" srcset="img/after-desktop@1x.png">
-                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-                <img class="example__img-after" src="img/after-mobile@1x.png" width="320" height="240" alt="Результат на котике">
+                <source media="(min-width: 1280px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="example__img-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Результат на котике">
               </picture>
             </div>
           </div>
@@ -191,7 +192,7 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__cooperation-contacts container">
           <p class="page-footer__cooperation text-title">Приглашаем <br> к сотрудничеству дилеров!</p>
-          <address class="page-footer__contacts">ул. Большая Конюшенная, д. 19/8 <br><br>Санкт-Петербург</address>
+          <address class="page-footer__contacts">ул. Большая Конюшенная, д. 19/8 <span class="page-footer__text">Санкт-Петербург</span></address>
         </div>
       </div>
 
@@ -200,9 +201,9 @@
         <iframe class="page-footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894615787456!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1575458147443!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
         <div class="page-footer__map">
           <picture>
-            <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-            <img class="page-footer__map-img" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта «Как до нас доехать!?»">
+            <source media="(min-width: 1280px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="page-footer__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="400" alt="Карта «Как до нас доехать!?»">
           </picture>
         </div>
       </section>
