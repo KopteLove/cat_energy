@@ -26,13 +26,17 @@
   .example__wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 243px;
+    margin-bottom: 241px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .example {
     padding-top: 0;
+  }
+
+  .example__text {
+    margin-bottom: 53px;
   }
 
   .example__header {
@@ -44,9 +48,9 @@
 @media (min-width: $desktop-width) {
   .example {
     border-top: none;
-    background-color: $gray;
     padding-bottom: 3px;
     z-index: -1;
+    background: linear-gradient(to top, #f2f2f2 76.7%, #ffffff 30%), linear-gradient(to right, #f2f2f2 58%, #eaeaea 58%);
   }
 
   .example__header {
@@ -68,7 +72,7 @@
     width: 435px;
     padding-right: 0;
     margin-top: 71px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 }
 
@@ -106,6 +110,7 @@
   .example__value {
     font-size: 30px;
     line-height: 36px;
+    padding: 15px 10px 19px;
   }
 }
 
@@ -138,7 +143,7 @@
   .example__mark {
     background-color: $gray;
     padding: 0;
-    margin: 0 17px;
+    margin: 0 16px;
   }
 }
 
@@ -174,6 +179,7 @@
     width: 190px;
     font-size: 20px;
     text-align: right;
+    margin-top: 12px;
   }
 
   .example__price {
@@ -212,7 +218,7 @@
   }
 
   .example__bg-wrapper {
-    background-color: $gray;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     padding-top: 0;
     padding-bottom: 50px;
     z-index: -1;
@@ -222,7 +228,7 @@
 @media (min-width: $desktop-width) {
   .example__total {
     display: flex;
-    width: 325px;
+    width: 327px;
     font-size: 20px;
     text-align: left;
     margin-top: 49px;
@@ -267,6 +273,10 @@
     height: 517px;
     clip: rect(auto, auto, auto, 365px);
     transform: translateX(60px);
+  }
+
+  .example__bg-wrapper {
+    background: none;
   }
 }
 
@@ -318,7 +328,7 @@
     align-self: center;
 
     &::before {
-      top: -15px;
+      top: -13px;
       left: 199px;
       width: 34px;
       height: 34px;
@@ -366,7 +376,7 @@
   .example__scale {
     position: absolute;
     right: 108px;
-    bottom: -2px;
+    bottom: 2px;
   }
 
   .example__scale-slider {
@@ -378,5 +388,9 @@
     &::after {
       left: 210px;
     }
+  }
+
+  .example__scale-text {
+    padding-bottom: 0;
   }
 }
