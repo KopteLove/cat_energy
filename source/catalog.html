@@ -4,10 +4,14 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи каталог продукции</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
 
   <header class="page-header">
     <div class="page-header__center">
@@ -401,22 +405,22 @@
         <ul class="social__list">
           <li class="social__item">
             <a href="#" class="social__link" aria-label="Мы во ВКонтакте">
-              <svg class="social__vk" fill="#666666"  width="22" height="12">
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              <svg class="social__vk" fill="#666666" width="22" height="12">
+                <use xlink:href="img/sprite.svg#spr-icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link" aria-label="Мы в Instagram">
               <svg class="social__ig" fill="#666666" width="16" height="16">
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
+                <use xlink:href="img/sprite.svg#spr-icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a href="#" class="social__link" aria-label="Мы в Facebook">
               <svg class="social__fb" fill="#666666" width="10" height="19">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
+                <use xlink:href="img/sprite.svg#spr-icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -427,14 +431,14 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="developer__link">
           <span>HTML Academy</span>
           <svg class="developer__svg" fill="#666666" width="40" height="40">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="img/sprite.svg#spr-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
   <script src="js/pictureFill.min.js"></script>
   <script src="js/supportSvgIE.min.js"></script>
 
