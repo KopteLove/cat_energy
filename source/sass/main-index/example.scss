@@ -355,42 +355,48 @@
   }
 
   .example__scale-slider:active::before {
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
-    border: 2px solid $green;
-    width: 32px;
-    height: 32px;
+    box-shadow:
+      0 4px 5px 0 rgba(0, 0, 0, 0.3),
+      0 0 0 2px $green;
+    width: 34px;
+    height: 34px;
   }
 
   .example__scale-text {
     font-size: 20px;
     border-bottom: 1px dashed #b8b8b8;
     padding-bottom: 5px;
+    cursor: pointer;
   }
 
   .example__scale-text:hover {
     border-bottom: 1px solid #989898;
+  }
+
+  .example__scale-text:active {
+    border-bottom: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .example__scale {
     position: absolute;
-    right: 108px;
-    bottom: 2px;
+    right: 110px;
+    bottom: -4px;
   }
 
   .example__scale-slider {
     &::before {
-      top: -13px;
-      left: 197px;
+      top: -14px;
     }
 
     &::after {
-      left: 210px;
+      top: -1px;
+      left: 212px;
     }
   }
 
   .example__scale-text {
-    padding-bottom: 0;
+    padding: 6px 0;
   }
 }
