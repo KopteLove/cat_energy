@@ -32,6 +32,7 @@
 @media (min-width: $desktop-width) {
   .container {
     max-width: 1220px;
+    padding: 0 40px;
   }
 
   .container-helper {
@@ -42,7 +43,6 @@
   .container-example {
     flex-shrink: 1;
     position: relative;
-    max-width: 1440px;
   }
 
   .container-height {

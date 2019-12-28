@@ -240,14 +240,13 @@
   }
 
   .example__relative {
-    position: static;
     min-height: 1px;
   }
 
   .example__hidden {
     position: absolute;
-    top: -598px;
-    right: 100px;
+    top: -599px;
+    left: 540px;
     width: 690px;
     height: 517px;
     overflow: hidden;
@@ -381,7 +380,7 @@
 @media (min-width: $desktop-width) {
   .example__scale {
     position: absolute;
-    right: 110px;
+    left: 690px;
     bottom: -4px;
   }
 
