@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи подбор программы</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,7 +18,7 @@
   <header class="page-header">
     <div class="page-header__center">
       <div class="page-header__wrapper container">
-        <a href="index.html" class="page-header__logo logo">
+        <a href="index.html" class="page-header__logo logo" aria-label="логотип компании Cat energy">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -96,10 +98,11 @@
       </div>
 
       <fieldset class="form__fieldset form__fieldset--contacts">
-        <legend class="form__padding container form__wrapper-header">
+        <legend class="visually-hidden">Контактные данные</legend>
+        <div class="form__padding container form__wrapper-header">
           <span class="form__header heading-group">Контактные данные</span><span class="form__header-helper heading-group">(владельца кота)</span>
           <!--span в одну строку для коректного отображения в IE-11 и FireFox 71.0-->
-        </legend>
+        </div>
         <div class="form__padding container">
           <ul class="form__list form__list--contacts">
             <li class="form__item form__item--mail">
@@ -125,9 +128,10 @@
       </fieldset>
 
       <fieldset class="form__fieldset form__fieldset--checkbox">
-        <legend class="form__padding container form__wrapper-header">
+        <legend class="visually-hidden">Дополнительно</legend>
+        <div class="form__padding container form__wrapper-header">
           <span class="form__header form__header--checkbox heading-group">Дополнительно</span>
-        </legend>
+        </div>
         <div class="form__padding container">
           <ul class="form__list form__list--checkbox">
             <li class="form__checkbox">
@@ -192,7 +196,7 @@
 
     <div class="container container-flex">
       <div class="page-footer__logo">
-        <a class="page-footer__logo-link"></a>
+        <a href="index.html" class="page-footer__logo-link" aria-label="логотип компании Cat energy"></a>
       </div>
 
       <div class="social">
@@ -222,7 +226,7 @@
       </div>
 
       <div class="developer">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="developer__link">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="developer__link" aria-label="логотип компании HTMLAcademy">
           <span>HTML Academy</span>
           <svg class="developer__svg" fill="#666666" width="40" height="40">
             <use xlink:href="img/sprite.svg#spr-htmlacademy"></use>

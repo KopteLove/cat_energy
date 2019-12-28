@@ -881,6 +881,7 @@ img {
     cursor: pointer;
     outline: none;
   }
+
   .main-nav--closed .main-nav__toggle::before {
     content: "";
     position: absolute;

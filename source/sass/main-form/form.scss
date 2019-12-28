@@ -161,7 +161,7 @@
   text-align: left;
   font-weight: normal;
   position: relative;
-  padding-top: 28px;
+  padding-top: 18px;
   padding-right: 20px;
   background-color: #ffffff;
   text-transform: none;
@@ -171,7 +171,7 @@
   display: inline-block;
   text-transform: none;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .form__radio:first-child {
@@ -266,6 +266,10 @@
   border: 1px solid #bababa;
 }
 
+.form__radio-input:focus + .form__radio-label::before {
+  box-shadow: 0 0 0 2px $green;
+}
+
 .form__fieldset--contacts {
   position: relative;
   padding-bottom: 3px;
@@ -323,21 +327,21 @@ input[type="tel"] + label {
     padding-bottom: 10px;
 
     &::after {
+      top: 42px;
       right: 0;
       width: 100%;
       height: 3px;
       z-index: -2;
-      top: auto;
-      bottom: 241px;
     }
   }
 
   .form__wrapper-header {
     width: 708px;
+    padding-bottom: 10px;
   }
 
   .form__header {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 28px;
     margin-left: -39px;
     padding-left: 39px;
@@ -349,7 +353,7 @@ input[type="tel"] + label {
     margin-left: -20px;
     padding-right: 43px;
     padding-bottom: 0;
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .form__list--contacts {
@@ -377,7 +381,7 @@ input[type="tel"] + label {
 
 @media (min-width: $desktop-width) {
   .form__fieldset--contacts::after {
-    bottom: 169px;
+    top: 47px;
   }
 
   .form__wrapper-header {
@@ -386,22 +390,23 @@ input[type="tel"] + label {
   }
 
   .form__header {
-    padding-top: 25px;
+    padding-top: 15px;
   }
 
   .form__header-helper {
     padding-bottom: 0;
-    padding-top: 25px;
+    padding-top: 15px;
   }
 
   .form__list--contacts {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .form__item--phone,
   .form__item--mail {
-    width: 100%;
+    min-width: 570px;
   }
 
   input[type="email"] + label {
@@ -579,8 +584,7 @@ input[type="tel"] + label {
     padding-bottom: 12px;
 
     &::after {
-      top: auto;
-      bottom: 234px;
+      top: 41px;
       width: 100%;
       z-index: -2;
     }
@@ -607,7 +611,7 @@ input[type="tel"] + label {
   .form__list--checkbox {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 67px;
+    padding-top: 56px;
   }
 
   .form__checkbox-label {
@@ -631,7 +635,7 @@ input[type="tel"] + label {
     margin-top: 48px;
 
     &::after {
-      bottom: 169px;
+      top: 42px;
     }
   }
 
@@ -659,6 +663,10 @@ input[type="tel"] + label {
 
 .form__checkbox-label:active {
   opacity: 0.3;
+}
+
+.form__checkbox-input:focus + .form__checkbox-label::before {
+  box-shadow: 0 0 0 2px $green;
 }
 
 .form__checkbox-input:disabled ~ label {

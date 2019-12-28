@@ -57,12 +57,16 @@
     }
   }
 
-  .main-nav--opened .site-list {
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list {
     display: block;
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
+  .main-nav--opened .site-list {
+    display: block;
   }
 }
 

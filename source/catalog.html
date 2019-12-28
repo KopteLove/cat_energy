@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи каталог продукции</title>
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -16,7 +18,7 @@
   <header class="page-header">
     <div class="page-header__center">
       <div class="page-header__wrapper container">
-        <a href="index.html" class="page-header__logo logo">
+        <a href="index.html" class="page-header__logo logo" aria-label="логотип компании Cat energy">
           <picture>
             <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -398,7 +400,7 @@
 
     <div class="container container-flex">
       <div class="page-footer__logo">
-        <a class="page-footer__logo-link"></a>
+        <a href="index.html" class="page-footer__logo-link" aria-label="логотип компании Cat energy"></a>
       </div>
 
       <div class="social">
@@ -428,7 +430,7 @@
       </div>
 
       <div class="developer">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="developer__link">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="developer__link" aria-label="логотип компании HTMLAcademy">
           <span>HTML Academy</span>
           <svg class="developer__svg" fill="#666666" width="40" height="40">
             <use xlink:href="img/sprite.svg#spr-htmlacademy"></use>
